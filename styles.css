@@ -1,0 +1,222 @@
+body{
+  background-color: #85BC2F;
+  font-family: "pressStart2P";
+  color: white;
+  font-size: 12px;
+}
+
+.hide{
+  display:none;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+
+@font-face {
+  font-family: "pressStart2P";
+  src: url("pressStart2P.ttf");
+}
+
+.startgame{
+   background-color: #85BC2F;
+    color: white;
+    padding:5px;
+    font-size: 12px;
+    border: 5px solid white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/*dropbuttons*/
+.dropbtn{
+  background-color: #85BC2F;
+  color: white;
+  padding:5px;
+  font-size: 12px;
+  border: 5px solid white;
+  cursor: pointer;
+  margin: 5px;
+}
+.dropContent{
+  display:none;
+  position:absolute;
+  background-color:#85BC2F;
+  min-width: 100px;
+  overflow: auto;
+  border:5px double white;
+}
+.dropContent li{
+  color:white;
+  text-decoration: none;
+  display:block;
+  cursor: pointer;
+}
+.show{
+  display:block;
+}
+
+
+
+/*dropbuttons*/
+.charScreen{
+  width: 30%;
+  height: 500px;
+  border: 5px double white;
+  float: left;
+  overflow-y: scroll;
+}
+.battleScreen{
+  width:60%;
+  height: 500px;
+  float: left;
+}
+
+.battlebox{
+  display: inline-block;
+  width: 100%;
+  padding-left: 1%;
+}
+
+.player1{
+  width: 35%;
+  height: 100px;
+  border: 5px double white;
+  float: left;
+  margin: 10px;
+}
+.player2{
+  width: 35%;
+  height: 100px;
+  border: 5px double white;
+  float: left;
+  margin: 10px;
+}
+.battleStatus{
+ width: 90%;
+ height: 200px;
+ margin: 10px;
+ float: left;
+}
+.health1{
+  width: 50px;
+  height:30px;
+  padding-left:10px;
+  border: 5px double white;
+  background: #85BC2F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 5px;
+}
+
+.player1img{
+  height: 64px;
+  width: 64px;
+  border: 2px solid white;
+  float: left;
+  margin: 5px;
+  padding: 0px;
+  overflow-y:inherit;
+}
+
+.player1name{
+  width: 100px;
+  height:30px;
+  padding-left: 10px;
+  border: 5px double white;
+  background: #85BC2F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.player2img{
+  height: 64px;
+  width: 64px;
+  border: 2px solid white;
+  float: left;
+  margin: 5px;
+  padding: 0px;
+  overflow-y:inherit;
+}
+
+.player2name{
+  width: 100px;
+  height:30px;
+  padding-left: 10px;
+  border: 5px double white;
+  background: #85BC2F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.health2{
+  width: 50px;
+  height:30px;
+  padding-left: 10px;
+  border: 5px double white;
+  background: #85BC2F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.boxStatus{
+  width: 100px;
+  height:30px;
+  padding-left: 10px;
+  border: 5px double white;
+  background: #85BC2F;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.battlefield{
+  width:500px;
+  height:200px;
+  border: 5px double white;
+  background: url("/textbackground.png");
+  background-position: 0 50%;
+}
+
+.player1Fight{
+  height: 90px;
+  width: 64px;
+  overflow-x: none;
+  overflow-y: hidden;
+  float: left;
+  margin-left: 10%;
+  margin-top: 70px;
+}
+
+.player2Fight{
+  height: 90px;
+  width: 64px;
+  overflow-x: none;
+  overflow-y: hidden;
+  float: left;
+  margin-left: 50%;
+  margin-top: 70px;
+}
+
+.robotAnimate{
+  height: 64px;
+  width: 64px;
+  display:block;
+  background-image: url('robotAnimate.png');
+  animation: play .3s steps(3) 1.0;
+}
+
+.drifterAnimate{
+  height: 64px;
+  width: 64px;
+  display:block;
+  background-image: url('drifterAnimate.png');
+  animation: play .3s steps(3) 1.0;
+}
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: 192px; }
+}
